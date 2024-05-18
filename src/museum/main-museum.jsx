@@ -78,7 +78,7 @@ function MuseumOfBali() {
           </div>
         </div>
       </div>
-      <div className="chat-museum w-80 mt-10 ml-16">
+      <div className="chat-museum w-60 mt-10 ml-16">
         <p>Perhatikan materinya baik-baik ya!!</p>
       </div>
       <a href='quizmuseum'>
