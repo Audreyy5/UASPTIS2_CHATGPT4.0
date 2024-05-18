@@ -22,11 +22,12 @@ function Diving (){
     return(
         <div className="relative container-diving p-4 flex flex-col items-center min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${UnderwaterBg})`, minHeight: '150vh' }}>
             <audio id="laguPantai" src={LaguPantai} loop autoPlay />
-            <div className='button-back-diving mb-4'>
+            <div className='button-back-diving mb-4 mt-16'>
                 <button className='back-diving bg-blue-500 text-white px-4 py-2 rounded shadow' onClick={goBack}>
                     <p className='p-diving text-white'>Kembali</p>
                 </button>
             </div>
+            <h1 className='text-2xl text-white font-bold mt-4 mb-4 italic'>Ayo tangkap hewan laut di dalam laut Bali ini !</h1>
             <div className='foto-ikan-diving relative w-full h-full'>
                 <div className="absolute" style={positions[0]}>
                     <a href='PariManta'>
