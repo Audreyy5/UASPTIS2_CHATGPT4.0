@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.container-utama-aboutus {
+  background-color: #bec7ed;
+  background-size: cover;
+}
+
+.container-aboutus {
+  display: flex;
+  justify-content: center;
+}
+
+.container-aboutus .img-aboutus {
+  max-width: 900px; 
+  height: 400px; 
+  margin: 10px auto;
+}
+
+.house-logo-aboutus {
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+.judul-aboutus {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.judul-aboutus p {
+  text-align: justify;
+  color: black;
+  width: 1000px;
+  margin: 20px auto;
+  font-family: 'times', sans-serif;
+}
+
+.judul-aboutus h2 {
+  color: rgb(120, 25, 9);
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.quotes p {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.judul-aboutus .photo-aboutus {
+  width: 1000px;
+  height: auto;
+  margin: 10px auto;
+}
+
+.table-aboutus {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.td-aboutus {
+  padding: 10px;
+  text-align: center;
+}
+
+.td-aboutus .img-aboutus {
+  width: 400px; 
+  height: 400px; 
+  object-fit: cover;
+  border-radius: 10px; 
+  margin-bottom: 10px;
+}
+
+.td-aboutus p {
+  margin: 30px 0;
+  font-family: 'helvetica', arial;
+  color: rgb(95, 63, 63);
+}
+
+.td-aboutus strong {
+  font-size: 18px;
+}
+
+.house-logo-aboutus {
+  position: absolute; 
+  top: 20px;
+  left: 20px; 
+  height: 50px; 
+  width: 50px;
+}
+
+.closing-aboutus {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(143, 10, 10);
+}
+
+.img-aboutus:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.img-aboutus {
+  animation: pulse 1s infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateOnce {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.quotes {
+  animation: rotateOnce 2.5s linear;
+  animation-fill-mode: forwards; 
+}
+
+
+.animated {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 5s;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+  .house-logo-aboutus {
+    margin: auto;
+  }
+
+  .container-aboutus {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quotes h2{
+    margin: 20px auto;
+  }
+
+  .judul-aboutus p {
+    text-align: justify;
+    width: 300px;
+    margin: 15px auto;
+  }
+
+  .table-aboutus {
+    width: 100%; 
+  }
+
+  .td-aboutus {
+    display: block;
+    text-align: center;
+  }
+
+  .photo-aboutus {
+    width: 100px;
+  }
+
+  .td-aboutus .img-aboutus {
+    width: 80%; 
+    margin: 0 auto;
+  }
+
+  .house-logo-aboutus {
+    position: static; 
+    margin-bottom: 10px; 
+  }
+}

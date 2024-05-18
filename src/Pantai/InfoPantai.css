@@ -1,0 +1,74 @@
+.container-infopantai {
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img-pantai/BgPantai.jpeg);
+    padding-bottom: 6%;
+}
+
+.back-infopantai {
+    background-color: rgb(116, 174, 239);
+    size: initial;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 2% 0 0 2%;
+    left: 110px;
+}
+
+.box-infopantai {
+    margin: 8%;
+    color: aliceblue;
+    background: rgba(34, 34, 34, 0.5);
+    text-align: center;
+    padding: 1% 10% 5% 10%;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.h1-infopantai {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.p-infopantai{
+    color: white;
+}
+
+.foto-infopantai {
+    display: flex;
+    justify-content: center;
+}
+
+.image-pantai {
+    width: 400px;
+    height: 280px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+@media (max-width: 900px) {
+    .foto-infopantai {
+        flex-direction: column;
+    }
+
+    .image-pantai {
+        width: 300px;
+        height: 200px;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .p-infopantai {
+        text-align: justify;
+    }
+}

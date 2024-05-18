@@ -1,0 +1,283 @@
+body {
+  background-color: #e4e3e0;
+}
+
+.top-left {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+}
+
+.top-left h1 {
+  font-size: 40px;
+  font-family: 'Heletivica';
+  font-weight: bold;
+  color: rgb(121, 75, 15);
+  margin-left: 10px;
+}
+
+.top-left p {
+  position: absolute;
+  top: 70px;
+  left: 22px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.kacapembesar-container {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.top-right {
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  font-size: 20px;
+}
+
+.top-right span {
+  margin-right: 100px;
+}
+
+.denah-image {
+  width: 1100px;
+  height: auto;
+}
+
+.kalender-image {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  width: 100px;
+}
+
+.top-left,
+.top-right,
+.todo-list {
+  padding: 10px;
+}
+
+.museum-image {
+  position: absolute;
+  left: 480px;
+  top: 80px;
+  width: 300px;
+  height: auto;
+}
+
+.pantai-image {
+  position: absolute;
+  left: 700px;
+  top: 290px;
+  width: 280px;
+  height: auto;
+}
+
+.restoran-image {
+  position: absolute;
+  left: 210px;
+  top: 310px;
+  width: 270px;
+  height: auto;
+}
+
+.aboutus-image {
+  position: absolute;
+  left: 80px;
+  top: 600px;
+  width: 90px;
+  height: auto;
+}
+
+.sunnyweather-image {
+  position: absolute;
+  left: 1345px;
+  top: 110px;
+  width: 40px;
+  height: auto;
+}
+
+.museum-image:hover,
+.pantai-image:hover,
+.restoran-image:hover,
+.aboutus-image:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.weather-info h2 {
+  margin-top: 160px;
+  margin-left: 1180px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.weather-container p {
+  margin-left: 1180px;
+  margin-top: 15px;
+}
+
+.app-container {
+  background-image: url('denah-4.png');
+  margin-top: 50px;
+}
+
+.app-container-rain {
+  background-image: url('denah-5.png');
+}
+
+.berita-container {
+  width: 310px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  position: absolute;
+  bottom: 30px;
+  left: 1140px;
+}
+
+.berita-box {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.berita-box h2 {
+  margin-top: 1px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.berita-list {
+  list-style: none;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.berita-list li {
+  margin-bottom: 5px;
+}
+
+.todo-list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  top: 330px;
+  bottom: 280px;
+  left: 1150px;
+  width: 300px;
+  background-color: #fff;
+  animation: slideInRight 0.5s ease forwards;
+}
+
+@media (max-width: 1080px) {
+  .todo-list {
+    left: 2300px;
+  }
+
+  .top-right {
+    left: 300px;
+  }
+
+  .top-right span {
+    margin-left: 210px;
+  }
+
+  .top-right h5 {
+    margin-left: 210px;
+  }
+
+  .denah-image {
+    margin-top: 30px;
+    width: 800px;
+    height: 500px;
+  }
+
+  .museum-image {
+    left: 170px;
+    top: 300px;
+    width: 150px;
+  }
+
+  .pantai-image {
+    left: 270px;
+    top: 490px;
+    width: 120px;
+  }
+
+  .restoran-image {
+    left: 90px;
+    top: 490px;
+    width: 120px;
+  }
+
+  .aboutus-image {
+    left: 30px;
+    top: 700px;
+    width: 50px;
+  }
+
+  .kacapembesar-container {
+    width: 30px;
+    margin-top: 30px;
+  }
+  
+  .kalender-image {
+    left: 350px;
+  }
+
+  .top-left p {
+    top: 200px;
+  }
+
+  .weather-info h2 {
+    margin-top: 200px;
+    margin-left: 470px;
+    width: 200px;
+  }
+  
+  .weather-container p {
+    margin-left: 470px;
+    width: 200px;
+  }
+
+  .todo-list {
+    margin-top: 80px;
+    bottom: 200px;
+    margin-right: 1540px;
+  }
+
+  .berita-container {
+    margin-top: 310px;
+    top: 320px;
+    position: absolute;
+    left: 460px;
+
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+.todo-list.hide {
+  animation: slideOutRight 0.5s ease forwards;
+}
+
+@keyframes slideOutRight {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: -100%;
+  }
+}

@@ -1,0 +1,40 @@
+.todo-list {
+    position: absolute;
+    bottom: 290px;
+    right: 80px;
+    background-color: #f8f2f2;
+    border-radius: 5px;
+    width: 330px;
+    font-family:'Times New Roman', Times, serif; 
+  }
+  
+  .todo-header {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .todo-item input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .todo-text {
+    flex: 1;
+  }
+
+  @media (max-width: 700px) {
+    .todo-list {
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-right: 800px;
+    }
+  }
+  
+  

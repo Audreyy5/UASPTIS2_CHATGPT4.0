@@ -1,0 +1,176 @@
+.container-museum {
+  height: 1500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('img-museum/museum-main.jpg');
+}
+
+.logo-chat-museum img {
+  margin-left: 70px;
+  display: flex;
+}
+
+.todolist-mainmuseum-image {
+  position: absolute; 
+  right: 90px; 
+  top: 160px; 
+  width: 60px; 
+  height: auto; 
+}
+
+.h1-museum {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gambar-museum p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.image {
+  width: 320px;
+  height: 200px;
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.logo-museum {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 70px;
+}
+
+.chat-museum {
+  position: relative;
+  background: #f7ecd9;
+  color: #000000;
+  font-family: Times New Roman;
+  font-size: 15px;
+  line-height: 45px;
+  box-shadow: 5px 6px 2px -1px rgba(163, 163, 163, 0.77);
+  text-align: center;
+  width: 400px;
+  height: 45px;
+  border-radius: 14px;
+  padding: 0px;
+  margin-left: 80px;
+}
+
+.chat-museum:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  z-index: 1;
+  border-style: solid;
+  border-width: 18px 22px 0 0;
+  border-color: #f7ecd9 transparent transparent transparent;
+  bottom: -18px;
+  left: 15%;
+}
+
+.button-museum {
+  border-radius: 20px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  background: #e0ad96;
+  padding: 10px;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.button-museum:hover {
+  background: #a83110;
+  text-decoration: none;
+}
+
+.gambar1-resto:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.gambar2:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.gambar3-resto:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.background-opacity {
+  opacity: 0.7; 
+}
+
+@keyframes slideInRight {
+  from {
+    right: -100%; 
+  }
+  to {
+    right: 0; 
+  }
+}
+
+.todo-list.hide {
+  animation: slideOutRight 0.5s ease forwards; 
+  animation: slideInRight 0.5s ease forwards;
+}
+
+@keyframes slideOutRight {
+  from {
+    right: 0; 
+  }
+  to {
+    right: -100%; 
+  }
+}
+
+@media (max-width: 700px) {
+
+  .container-museum {
+    height: 1000;
+  }
+
+  .todolist-mainmuseum-image {
+    right: 140px; 
+    top: 115px; 
+  }
+
+  .h1-museum {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .tulisan-museum-p p {
+    margin-top: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chat-museum {
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .button-museum {
+    margin: 40px 32px;
+    width: 300px;
+  }
+}

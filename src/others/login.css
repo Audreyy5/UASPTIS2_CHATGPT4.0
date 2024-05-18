@@ -1,0 +1,108 @@
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1200px;
+  background-size: cover;
+  background-position: center;
+  background-image: url('img/login.jpg');
+  text-align: center;
+  background-color: transparent;
+}
+
+.h1-login {
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 3px #05030c;
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.h3-login {
+  color: #fbfbfb;
+  text-shadow: 2px 2px 2px #05030c;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-style: oblique;
+  font-weight: bolder;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.recaptcha-box{
+  width: 100%;
+  height: auto;
+  margin-left: 27%;
+}
+
+.recaptcha{
+ width: 100%;
+ height: auto;
+ margin: auto;
+}
+
+
+input[type="text"],
+.button-login {
+  margin: 15px;
+  padding: 10px 150px;
+  font-size: 20px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 1px solid #05030c;
+  border-radius: 5px;
+  background-color: rgba(113, 110, 110, 0.4);
+  color: #fffefe;
+}
+
+input[type="text"]::placeholder {
+  color: #fffefe;
+  font-family: initial;
+}
+
+input[type="text"]:hover {
+  border-color: #ddf92a;
+}
+
+.button-login {
+  background-color: #fae0c7;
+  border-radius: 5px;
+  color: #0d0808;
+  border: none;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button:hover {
+  background-color: #ffc66f;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    height: 800px;
+  }
+
+  .container-login {
+    max-width: 900px;
+    padding: 20px;
+    background-repeat: no-repeat;
+  }
+
+  .recaptcha-box{
+    margin-left: 17%;
+  }
+
+
+  input[type="text"],
+  .button-login {
+    padding: 10px 50px;
+  }
+
+  .h1-login {
+    font-size: 60px;
+  }
+
+  .h3-login {
+    font-size: 30px;
+  }
+}

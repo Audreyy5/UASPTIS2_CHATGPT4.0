@@ -1,0 +1,164 @@
+
+.gambar-main-quiz {
+  background-image: url(img-museum/main-quiz-museum.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.header h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(216, 125, 14);
+}
+
+.header h4 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(133, 129, 21);
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.question-container h3 {
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.answer-container {
+  margin-left: 300px;
+  margin-right: 300px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+
+.button-container button {
+  padding: 10px 50px;
+  margin-top: 10px;
+  margin-left: 310px;
+  background-color: #e3a53b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e3d969;
+  cursor: pointer;
+}
+
+.hasil-score h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 15px;
+  color: rgb(136, 84, 20);
+}
+
+.hasil-score p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(136, 84, 20);
+  font-weight: bold;
+}
+
+.button-quiz-museum {
+  background-color: rgb(230, 145, 34);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 30px;
+  left: 120px;
+}
+
+.button-rumah:hover {
+  background-color: rgb(218, 190, 123);
+}
+
+.notification-container {
+  background-color: #f8d7da;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #721c24;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.notification-container .close-button {
+  color: #721c24;
+  margin-top: 10px;
+}
+
+.notification-container .close-button:hover {
+  color: #721c24;
+  background-color: pink;
+}
+
+@media screen and (max-width: 900px) {
+  .button-container button {
+    margin: 5px auto;
+    display: flex;
+  }
+
+  .button-quiz-museum {
+    margin-top: 20px;
+    left: 10px;
+  }
+
+  .question-container h3, .answer-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-top: 50px;
+    color: rgb(216, 125, 14);
+  }
+
+  .hasil-score h2 {
+    margin-top: 5px;
+  }
+}

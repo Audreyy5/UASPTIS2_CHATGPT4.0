@@ -1,0 +1,131 @@
+.container-pantai {
+    height: 1800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img-pantai/BgPantai.jpeg);
+}
+
+.carousel-pantai {
+    margin: auto;
+    width: 40%;
+    height: auto;
+}
+
+.logo-pantai {
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+}
+
+.logo-game-pantai {
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+}
+
+.todolist-pantai-image {
+    position: absolute;
+    right: 90px;
+    top: 100px;
+    width: 60px;
+    height: auto;
+}
+
+.background-opacity {
+    opacity: 0.7;
+}
+
+.h1-pantai {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: rgb(6, 1, 96);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.gambar-pantai {
+    margin: auto;
+    padding: 40px;
+}
+
+.gambar-pantai table {
+    width: 100%;
+    border-collapse: collapse;
+    display: flex;
+}
+
+.gambar-pantai td {
+    width: 33%;
+    padding: 15px;
+}
+
+.gambar-pantai h3 {
+    height: 20px;
+    text-align: center;
+    color: rgb(15, 0, 116);
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.gambar-pantai img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.gambar1pantai:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gambar2pantai:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gambar3pantai:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1080px) {
+    .logo-chat-museum img {
+        margin: 0 100px;
+    }
+
+    .gambar-pantai table {
+        display: flex;
+        margin: auto;
+    }
+
+    .gambar-museum td {
+        display: block;
+    }
+
+    .gambar-museum tr {
+        display: block;
+    }
+
+    .gambar-museum p {
+        margin-bottom: 20px;
+    }
+
+    .todolist-pantai-image {
+        right: 120px;
+        top: 87px;
+    }
+}
