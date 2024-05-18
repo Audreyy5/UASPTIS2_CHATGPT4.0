@@ -26,9 +26,17 @@ function Homepage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [articleTitle, setArticleTitle] = useState('');
 
-  const handleSearch = (e) => {
+  const handleSearch = async (e) => {
     e.preventDefault();
-    setArticleTitle(searchTerm);
+    try {
+      const apiKey = '1f71fed6d9354ce983769edc7f265c31';
+      const url = `https://newsapi.org/v2/everything?q=${searchTerm}&apiKey=${apiKey}`;
+      const response = await fetch(url);
+      const result = await response.json();
+      setNewsData(result.articles);
+    } catch (error) {
+      console.error('Error fetching news data:', error);
+    }
   };
 
   useEffect(() => {
@@ -51,7 +59,7 @@ function Homepage() {
 
     fetchData();
   }, []);
-
+  
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
