@@ -6,6 +6,7 @@ import pakaian from './img-museum/pakaian.jpeg';
 import perayaan from './img-museum/perayaan.jpeg';
 import rumah from './img-museum/rumah.png';
 import todolistImage from './img-museum/todolist.png';
+import lagumuseum from './img-museum/museum.mp3';
 
 function MuseumOfBali() {
   const [showTodoList, setShowTodoList] = useState(false);
@@ -34,6 +35,7 @@ function MuseumOfBali() {
   return (
     <div className={`container-museum ${showBackground ? 'background-opacity' : ''}`}>
       <br /><br /><br /><br /><br />
+      <audio id="lagumuseum" src={lagumuseum} loop autoPlay />
       <div className='todolist-main-museum' onClick={handleTodoListClick}>
         <img src={todolistImage} alt="TodoList" className='todolist-mainmuseum-image' />
       </div>
