@@ -35,7 +35,7 @@ const LoginPage = () => {
           onChange={(e) => setName(e.target.value)}
         />
         <div className='recaptcha-box'>
-          <ReCAPTCHA className='recaptcha' sitekey="6LfsZt0pAAAAAGT6phY05Jk-prB2fxgvpJ3vMMNW" onChange={onChange} />
+          <ReCAPTCHA className='recaptcha' sitekey="6Le4kOEpAAAAAEWp5TPrDbfh3strLls6R77Kr1Lg" onChange={onChange} />
         </div>
         <br />
         <button className='button-login mt-1' onClick={handleSaveName}>Mulai</button>
