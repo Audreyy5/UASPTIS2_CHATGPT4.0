@@ -10,6 +10,7 @@ Selamat datang di repository website edukasi "Beauty of Bali". Proyek ini bertuj
 - [API yang Digunakan](#api-yang-digunakan)
 - [Layar Media Optimal](#layar-media-optimal)
 - [React and Vite](#react-vite)
+- [Link Video Drive, Hosting, dan Github](#link-video-drive-github)
 
 ## Tema
 Website kami dibangun dengan tema 'Nusantara', dengan fokus khusus pada Bali. Kami bertujuan untuk menampilkan kekayaan budaya dan keindahan alam Bali dengan tema "Beauty of Bali". Website ini berfungsi sebagai platform edukasi untuk memperdalam pemahaman pengunjung tentang warisan unik Bali dan mendorong pelestarian lingkungan serta tradisinya.
@@ -81,6 +82,10 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## Link Video Presentasi, Hosting dan Github
+- Video Presentasi : https://drive.google.com/file/d/1ruXj9HgB_UjvSnfTuzNDaSgLMJ4o0Lg0/view?usp=share_link 
+- Github Respository : https://github.com/Audreyy5/UASPTIS2_CHATGPT4.0.git 
+- Hosting : beautyofbali.vercel.app 
 ---
 
 Terima kasih telah berkunjung ke website kami!
