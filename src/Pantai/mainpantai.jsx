@@ -15,6 +15,7 @@ import rumah from './img-pantai/rumah.png';
 import game from './img-pantai/logogame.png';
 import todolistImage from './img-pantai/todolist.png';
 import diving from './img-pantai/diving-logo.png';
+import lagupantai from './img-pantai/pantai.mp3';
 
 function MainPantai() {
     const images = [
@@ -50,6 +51,7 @@ function MainPantai() {
     return (
         <div className={`container-pantai ${showBackground ? 'background-opacity' : ''}`}>
             <br /><br /><br /><br />
+            <audio id="lagupantai" src={lagupantai} loop autoPlay />
             <div className='logo-home-pantai'>
                 <a href='homepage'>
                     <img className="logo-pantai" src={rumah} alt="Logo Rumah" />
