@@ -18,34 +18,35 @@ function Homepage() {
   const [todos, setTodos] = useState({});
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
   const [weather, setWeather] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [weatherLoading, setWeatherLoading] = useState(true);
+  const [weatherError, setWeatherError] = useState(null);
   const [isRaining, setIsRaining] = useState(false);
   const [newsData, setNewsData] = useState(null);
   const audioRef = useRef(null);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [articleTitle, setArticleTitle] = useState('');
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    setArticleTitle(searchTerm);
-  };
+  const [heroesData, setHeroesData] = useState([]);
+  const [heroesLoading, setHeroesLoading] = useState(true);
+  const [heroesError, setHeroesError] = useState(null);
 
   useEffect(() => {
     console.log('Fetching data...');
 
     const fetchData = async () => {
-      const url = 'https://newsapi.org/v2/top-headlines?country=id&apiKey=1f71fed6d9354ce983769edc7f265c31';
-      const options = {
-        method: 'GET',
-      };
+      const url = 'https://indonesia-public-static-api.vercel.app/api/heroes';
 
       try {
-        const response = await fetch(url, options);
-        const result = await response.json();
-        setNewsData(result.articles);
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        console.log('Fetched data:', data); // Debug log
+        setHeroesData(data);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Error fetching data:', error); // Debug log
+        setHeroesError(error.message);
+      } finally {
+        setHeroesLoading(false);
       }
     };
 
@@ -64,7 +65,7 @@ function Homepage() {
         console.log("Weather data:", data);
 
         setWeather(data);
-        setLoading(false);
+        setWeatherLoading(false);
 
         if (data.weather[0].main === "Rain") {
           setIsRaining(true);
@@ -73,8 +74,8 @@ function Homepage() {
         }
       } catch (error) {
         console.error("Error fetching weather data:", error);
-        setError(error);
-        setLoading(false);
+        setWeatherError(error);
+        setWeatherLoading(false);
       }
     };
 
@@ -216,10 +217,10 @@ function Homepage() {
 
         <div className="weather-info">
           <h2>How's the weather in Bali?</h2>
-          {loading ? (
+          {weatherLoading ? (
             <p>Loading...</p>
-          ) : error ? (
-            <p>Error: {error.message}</p>
+          ) : weatherError ? (
+            <p>Error: {weatherError.message}</p>
           ) : (
             weather && (
               <div className="weather-container">
@@ -240,17 +241,27 @@ function Homepage() {
             )
           )}
         </div>
-        <div className="berita-container">
-          <div className="berita-box">
-            <h2>Berita Terkini 📰</h2>
-            <ul className="berita-list">
-              {newsData ? newsData.map((article, index) => (
-                <li key={index}>{article.title}</li>
-              )) : (
-                <p>Loading news...</p>
-              )}
-            </ul>
-          </div>
+        <div className="heroes-container">
+          {heroesLoading ? (
+            <p>Loading heroes data...</p>
+          ) : heroesError ? (
+            <p>Error loading heroes data: {heroesError}</p>
+          ) : (
+            <div className="heroes-box">
+              <h2>Daftar Pahlawan Nasional Indonesia</h2>
+              <ul className="heroes-list">
+                {heroesData.map((hero, index) => (
+                  <li key={index}>
+                    <h3>{hero.name}</h3>
+                    <p><strong>Birth Year:</strong> {hero.birth_year}</p>
+                    <p><strong>Death Year:</strong> {hero.death_year}</p>
+                    <p><strong>Ascension Year:</strong> {hero.ascension_year}</p>
+                    <p><strong>Description:</strong> {hero.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>

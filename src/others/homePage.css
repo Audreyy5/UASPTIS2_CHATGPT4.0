@@ -128,37 +128,38 @@ body {
   background-image: url('denah-5.png');
 }
 
-.berita-container {
-  width: 310px;
+.heroes-container {
+  width: 300px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  position: absolute;
-  bottom: 30px;
-  left: 1140px;
+  padding: 10px;
+  position: fixed; 
+  bottom: 10px;
+  right: 10px;
 }
 
-.berita-box {
-  max-height: 200px;
+.heroes-box {
+  max-height: 200px; 
   overflow: auto;
 }
 
-.berita-box h2 {
-  margin-top: 1px;
-  font-weight: bold;
-  margin-bottom: 7px;
-}
-
-.berita-list {
+.heroes-list {
   list-style: none;
-  font-size: 15px;
   padding: 0;
   margin: 0;
 }
 
-.berita-list li {
+.heroes-list li {
   margin-bottom: 5px;
+}
+
+.heroes-list h3 {
+  margin: 0 0 5px 0;
+}
+
+.heroes-list p {
+  margin: 0;
+  word-wrap: break-word;
 }
 
 .todo-list {
