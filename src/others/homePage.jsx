@@ -252,11 +252,11 @@ function Homepage() {
               <ul className="heroes-list">
                 {heroesData.map((hero, index) => (
                   <li key={index}>
-                    <h3>{hero.name}</h3>
-                    <p><strong>Birth Year:</strong> {hero.birth_year}</p>
-                    <p><strong>Death Year:</strong> {hero.death_year}</p>
-                    <p><strong>Ascension Year:</strong> {hero.ascension_year}</p>
-                    <p><strong>Description:</strong> {hero.description}</p>
+                    <h3><hr />{hero.name}<hr /></h3>
+                    <p>Birth Year     : {hero.birth_year}</p>
+                    <p>Death Year     : {hero.death_year}</p>
+                    <p>Ascension Year : {hero.ascension_year}</p>
+                    <p>Description    : {hero.description}</p>
                   </li>
                 ))}
               </ul>
