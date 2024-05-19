@@ -11,7 +11,7 @@ function TodoList({ userName }) {
     } else {
       setTodos([
         { id: 1, text: 'Pergi ke museum', completed: false },
-        { id: 2, text: 'Belajar Kebudayaan Bali', completed: false },
+        { id: 2, text: 'Belajar kebudayaan Bali', completed: false },
         { id: 3, text: 'Cari penyu laut', completed: false },
         { id: 4, text: 'Jalan-jalan di pantai', completed: false },
         { id: 5, text: 'Makan makanan khas Bali', completed: false }

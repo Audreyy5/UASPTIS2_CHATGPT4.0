@@ -27,7 +27,7 @@ const LoginPage = () => {
     <div className="container-login">
       <div className='absolute-login'>
         <h1 className='h1-login'>Welcome to Beauty of Bali</h1>
-        <h3 className='h3-login'>Siapkan anda untuk bermain dan belajar ? </h3>
+        <h3 className='h3-login'>Siapkah anda untuk bermain dan belajar ? </h3>
         <input className='input-Login mb-1'
           type="text"
           placeholder="Masukkan nama anda"
