@@ -33,7 +33,7 @@ body {
 .top-right {
   position: absolute;
   top: 60px;
-  right: 50px;
+  margin-left: 1230px;
   font-size: 20px;
 }
 
@@ -183,6 +183,7 @@ body {
 
   .top-right {
     left: 200px;
+    margin-left: 0;
   }
 
   .top-right span {
@@ -253,7 +254,7 @@ body {
   }
 
   .heroes-container {
-    margin-left: 450px;
+    margin-left: 460px;
     margin-top: 230px;
   }
  
