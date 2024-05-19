@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import BgGame from './img-pantai/BgGame.png';
+import lagugame from './img-pantai/lagumain.mp3';
 
 function Game() {
     const [number] = useState(39); 
@@ -40,6 +41,7 @@ function Game() {
                 <button onClick={goBack} className="p-2.5 m-1 text-lg bg-blue-200 text-black rounded hover:bg-blue-300 shadow">
                     Kembali
                 </button>
+                <audio id="lagugame" src={lagugame} loop autoPlay />
                 <div className='container-angka bg-blue-100-transparent'>
                 <h1 className="text-5xl mb-5 mt-10 font-serif text-black italic">Ada angka berapa di pantai ? </h1>
                 <p className="font-serif text-black">Angka berada di antara 1 sampai 100 !! </p>
