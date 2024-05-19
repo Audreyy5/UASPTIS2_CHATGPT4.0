@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import bggameresto from './img-restaurant/bggameresto.png';
+import lagugame from './img-restaurant/lagugame.mp3';
 
 const foods = ['🍎', '🍌', '🍓', '🥑', '🧅', '🍗', '🍧', '🍦', '🌶️', '🍪'];
 
@@ -73,6 +74,7 @@ const Gameresto = () => {
             <button onClick={goBack} className="p-2.5 mb-10 text-lg bg-orange-300 text-white rounded hover:bg-orange-200 shadow">
                 Kembali
             </button>
+            <audio id="laguGame" src={lagugame} loop autoPlay />
             <h1 className="text-5xl font-bold italic mb-8 text-black text-center">Food Memory Game </h1>
             <p className="text-xl font-bold mb-5 text-black">yuk kita main bersama ! </p>
             <div className="grid grid-cols-4 gap-4">
