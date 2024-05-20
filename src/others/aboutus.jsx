@@ -6,7 +6,7 @@ import image1 from './img/devin.jpg';
 import image2 from './img/drey.jpg';
 import image3 from './img/ver.jpg';
 import image4 from './img/ryann.jpg';
-import houseLogo from './img/rumah.png';
+import { FaHome } from "react-icons/fa";
 
 function AboutUs() {
   const [count, setCount] = useState(0);
@@ -17,7 +17,10 @@ function AboutUs() {
       <div className='container-utama-aboutus'>
         <div className='judul-aboutus' ref={ref}>
           <a href="/homepage" >
-            <img src={houseLogo} alt="House Logo" className="house-logo-aboutus" />
+            <br />
+            <div className='text-white text-5xl ml-16'>
+            <FaHome />
+            </div>
           </a>
           <br /><br /><br />
           <h2 className={inView ? 'animated fadeInUp' : ''}>✨ About Us ✨</h2><br />
