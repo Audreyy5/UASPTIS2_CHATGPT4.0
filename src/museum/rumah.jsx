@@ -28,7 +28,7 @@ function RumahPakaian() {
     <div className='main-image-pakaianrumah' ref={refRumah}>
       <div className="rumah">
         <br /><br />
-        <button className='button-rumah' onClick={goBack}>Kembali</button>
+        <button className='button-rumah mt-10' onClick={goBack}>Kembali</button>
         <h1 className={inViewRumah ? 'animated fadeIn' : ''}>Rumah Adat Daerah Bali 🏠</h1>
         <br />
         <div className="gambar-container-rumah"> 

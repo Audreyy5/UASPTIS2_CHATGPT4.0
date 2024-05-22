@@ -169,8 +169,13 @@
     display: flex;
   }
 
-  .rumah-info p,
+  .rumah-info h3,
+  .pakaian-info h3 {
+    margin-bottom: 20px;
+  }
+
+  .rumah-info p, 
   .pakaian-info p {
-    margin: 0 10px;
+    margin: 0 45px;
   }
 }

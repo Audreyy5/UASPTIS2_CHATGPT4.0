@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
+import { Modal, Button } from '@mui/material'; 
 import "./homePage.css";
 import TodoList from "./TodoList.jsx";
 import denahImage from "./img/denah-4.png";
@@ -22,11 +23,18 @@ function Homepage() {
   const [weatherError, setWeatherError] = useState(null);
   const [isRaining, setIsRaining] = useState(false);
   const [newsData, setNewsData] = useState(null);
-  const audioRef = useRef(null);
-
   const [heroesData, setHeroesData] = useState([]);
   const [heroesLoading, setHeroesLoading] = useState(true);
   const [heroesError, setHeroesError] = useState(null);
+  const audioRef = useRef(null);
+
+    const savedName = location.state?.savedName;
+  
+    useEffect(() => {
+      if (savedName) {
+        alert(`Login berhasil! Selamat datang, ${savedName}!`);
+      }
+    }, [savedName]);  
 
   useEffect(() => {
     console.log('Fetching data...');
@@ -40,10 +48,10 @@ function Homepage() {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        console.log('Fetched data:', data); // Debug log
+        console.log('Fetched data:', data); 
         setHeroesData(data);
       } catch (error) {
-        console.error('Error fetching data:', error); // Debug log
+        console.error('Error fetching data:', error); 
         setHeroesError(error.message);
       } finally {
         setHeroesLoading(false);

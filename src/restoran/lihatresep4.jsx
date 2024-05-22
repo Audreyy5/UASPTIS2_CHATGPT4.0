@@ -34,6 +34,9 @@ const Lawar = () => {
       <body className="min-h-screen md:flex justify-center items-center md:bg-eggshell">
         <main>
           <article className="bg-white md:my-20 md:py-8 pb-8 md:rounded-xl md:max-w-screen-md">
+            <button onClick={goBack} className="p-2 mt-2 mb-5 text-lg bg-pink-500 text-white rounded hover:bg-red-200 shadow">
+              Kembali
+            </button>
             <picture>
               <img
                 src={lawarImage}

@@ -18,11 +18,10 @@ function AboutUs() {
         <div className='judul-aboutus' ref={ref}>
           <a href="/homepage" >
             <br />
-            <div className='text-white text-5xl ml-16'>
+            <div className='text-white text-5xl ml-16 mt-20 mb-5'>
             <FaHome />
             </div>
           </a>
-          <br /><br /><br />
           <h2 className={inView ? 'animated fadeInUp' : ''}>✨ About Us ✨</h2><br />
           <img src={image0} alt="Image 0" className='photo-aboutus' />
           <p className={inView ? 'animated fadeIn' : '' }>Kelompok kami berkomitmen untuk menyelesaikan project terakhir UAS PTI di semester dua ini dengan sebaik mungkin dan mendapat hasil yang maksimal.
@@ -38,6 +37,7 @@ function AboutUs() {
             <h2 className={inView ? 'animated fadeIn' : ''}>✅ Quotes Of The Day ✅</h2>
             <p>"Jadilah seperti loop tanpa akhir: terus berputar tanpa pernah berakhir!"</p>
           </div>
+          <br /><br />
           <h2 className={inView ? 'animated fadeIn' : ''}>👫 Meet Our Team 👫</h2>
           <br />
         </div>

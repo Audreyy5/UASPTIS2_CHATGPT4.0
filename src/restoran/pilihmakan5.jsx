@@ -6,7 +6,10 @@ import nasicampur2 from "./img-restaurant/nasicampur2.webp"
 function Makanan5() {
     return (
         <div className="container-restoran">
-            <br /><br /><br /><br /><br /><br />
+            <br /><br /><br />
+            <a href="listmakan">
+                <button className="return-button mb-5 p-3 ml-1">&#8592; Kembali</button>
+            </a>
             <h1 className="sambutan-restoran">Nasi Campur Bali</h1>
             <div className="image-container">
                 <FoodImage image={nasicampur1} alt="Nasi Campur" />
@@ -23,10 +26,6 @@ function Makanan5() {
                     <button className="button lihat-resep-button">Lihat Resep</button>
                 </a>
             </div>
-            <a href="listmakan">
-                <button className="return-button">&#8592; Kembali</button>
-            </a>
-
         </div>
     );
 }

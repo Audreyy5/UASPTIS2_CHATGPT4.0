@@ -17,10 +17,10 @@
 
 .sambutan-restoran-list {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: bolder;
   font-style: italic;
   text-align: center;
-  color: rgb(12, 7, 7);
+  color: rgb(105, 5, 5);
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -37,7 +37,7 @@
 
 .card-container {
   display: grid;
-  gap: 150px;
+  gap: 110px;
   padding: 20px;
   align-items: flex-start;
 }

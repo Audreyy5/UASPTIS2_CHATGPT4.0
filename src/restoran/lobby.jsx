@@ -46,7 +46,7 @@ function Restoran() {
           <img className="logo-game-resto mt-5 w-12" src={game} alt="Logo Game" />
         </a>
       </div>
-      <h1 className="sambutan-restoran">Selamat Datang di Bondi Restaurant !</h1>
+      <h1 className="sambutan-restoran mt-10">Selamat Datang di Bondi Restaurant !</h1>
       <h2 className="sambutan-restoran2">Yuk Masuk !</h2>
       <div className="gambar-restoran flex flex-cols-3 md:flex-row gap-4">
         <div className="gambar1 w-[600px]">

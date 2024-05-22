@@ -92,13 +92,9 @@
   }
   
   .return-button {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    padding: 10px;
     font-size: 16px;
     font-weight: bold;
-    background-color: #2ecc71;
+    background-color: #195a34;
     color: white;
     border: none;
     border-radius: 5px;

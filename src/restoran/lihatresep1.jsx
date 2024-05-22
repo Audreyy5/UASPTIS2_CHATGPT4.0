@@ -31,9 +31,12 @@ const BabiGuling = () => {
         />
         <title>Babi Guling</title>
       </Helmet>
-      <body className="min-h-screen md:flex justify-center items-center md:bg-eggshell">
+      <body className="min-h-screen md:flex justify-center items-center md:bg-eggshell-200">
         <main>
           <article className="bg-white md:my-20 md:py-8 pb-8 md:rounded-xl md:max-w-screen-md">
+            <button onClick={goBack} className="p-2 mt-2 mb-5 text-lg bg-pink-500 text-white rounded hover:bg-red-200 shadow">
+              Kembali
+            </button>
             <picture>
               <img
                 src={babiGuling}
@@ -66,13 +69,13 @@ const BabiGuling = () => {
                   </li>
                   <li className="mt-3 pl-3">
                     <p>
-                      <span className="font-semibold">Waktu Persiapan: </span>
+                      <span className="font-semibold">Waktu Persiapan : </span>
                       1-2 jam
                     </p>
                   </li>
                   <li className="mt-3 pl-3">
                     <p>
-                      <span className="font-semibold">Waktu Memasak: </span>3-4
+                      <span className="font-semibold">Waktu Memasak : </span>3-4
                       jam
                     </p>
                   </li>
@@ -208,9 +211,6 @@ const BabiGuling = () => {
                 </ul>
               </div>
             </div>
-            <button onClick={goBack} className="p-2 mt-10 text-lg bg-red-200 text-white rounded hover:bg-blue-600 shadow">
-              Kembali
-            </button>
           </article>
         </main>
       </body>

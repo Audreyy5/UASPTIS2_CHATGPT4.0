@@ -6,7 +6,10 @@ import satelilit2 from "./img-restaurant/satelilit2.webp"
 function Makanan3() {
     return (
         <div className="container-restoran">
-            <br /><br /><br /><br /><br /><br />
+            <br /><br /><br />
+            <a href="listmakan">
+                <button className="return-button mb-5 p-3 ml-1">&#8592; Kembali</button>
+            </a>
             <h1 className="sambutan-restoran">Sate Lilit</h1>
             <div className="image-container">
                 <FoodImage image={satelilit1} alt="Sate Lilit" />
@@ -24,9 +27,6 @@ function Makanan3() {
                     <button className="button lihat-resep-button">Lihat Resep</button>
                 </a>
             </div>
-            <a href="listmakan">
-                <button className="return-button">&#8592; Kembali</button>
-            </a>
         </div>
     );
 }

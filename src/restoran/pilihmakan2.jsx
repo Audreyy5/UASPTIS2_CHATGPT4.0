@@ -6,7 +6,10 @@ import ayambetutu2 from "./img-restaurant/ayambetutu2.jpg"
 function Makanan2() {
     return (
         <div className="container-restoran">
-            <br /><br /><br /><br /><br /><br />
+            <br /><br /><br />
+            <a href="listmakan">
+                <button className="return-button mb-5 p-3 ml-1">&#8592; Kembali</button>
+            </a>
             <h1 className="sambutan-restoran">Ayam Betutu</h1>
             <div className="image-container">
                 <FoodImage image={ayambetutu1} alt="Ayam Betutu" />
@@ -24,9 +27,6 @@ function Makanan2() {
                     <button className="button lihat-resep-button">Lihat Resep</button>
                 </a>
             </div>
-            <a href="listmakan">
-                <button className="return-button">&#8592; Kembali</button>
-            </a>
         </div>
     );
 }
