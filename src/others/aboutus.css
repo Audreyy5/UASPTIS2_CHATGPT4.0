@@ -187,9 +187,13 @@
     margin: 20px auto;
   }
 
+  .quotes p {
+    text-align: center;
+  }
+
   .judul-aboutus p {
     text-align: justify;
-    width: 390px;
+    width: auto;
     margin: 15px 53px;
     margin-top: 30px;
     margin-bottom: 2px;

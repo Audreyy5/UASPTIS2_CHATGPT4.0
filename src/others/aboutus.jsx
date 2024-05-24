@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useInView } from 'react-intersection-observer'; 
+import { useInView } from 'react-intersection-observer';
 import './aboutus.css';
 import image0 from './img/Image0.jpeg';
 import image1 from './img/devin.jpg';
@@ -10,7 +10,36 @@ import { FaHome } from "react-icons/fa";
 
 function AboutUs() {
   const [count, setCount] = useState(0);
-  const { ref, inView } = useInView(); 
+  const { ref, inView } = useInView();
+
+  const [joke, setJoke] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const fetchJoke = async () => {
+    setLoading(true);
+    setError(null);
+
+    const url = 'https://icanhazdadjoke.com/';
+    const options = {
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json'
+      }
+    };
+
+    try {
+      const response = await fetch(url, options);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const result = await response.json();
+      setJoke(result.joke);
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <>
@@ -19,12 +48,12 @@ function AboutUs() {
           <a href="/homepage" >
             <br />
             <div className='text-white text-5xl ml-16 mt-20 mb-5'>
-            <FaHome />
+              <FaHome />
             </div>
           </a>
           <h2 className={inView ? 'animated fadeInUp' : ''}>✨ About Us ✨</h2><br />
           <img src={image0} alt="Image 0" className='photo-aboutus' />
-          <p className={inView ? 'animated fadeIn' : '' }>Kelompok kami berkomitmen untuk menyelesaikan project terakhir UAS PTI di semester dua ini dengan sebaik mungkin dan mendapat hasil yang maksimal.
+          <p className={inView ? 'animated fadeIn' : ''}>Kelompok kami berkomitmen untuk menyelesaikan project terakhir UAS PTI di semester dua ini dengan sebaik mungkin dan mendapat hasil yang maksimal.
             Dengan pemberian tema 'Nusantara' sebagai materi utama yang dibawakan pada setiap pembuatan websitenya, kami memilih daerah Bali untuk kami presentasikan dan
             membantu banyak orang untuk mengenal Pulau Bali lebih dalam. Dengan mengangkat tema "Beauty of Bali" dalam website edukasi ini, kami berharap dapat memberikan
             pemahaman yang lebih dalam tentang keindahan dan kekayaan budaya Bali kepada para pengunjung. Melalui isi web yang informatif dan interaktif, kami ingin mengembangkan
@@ -35,8 +64,14 @@ function AboutUs() {
           <br />
           <div className={`quotes`}>
             <h2 className={inView ? 'animated fadeIn' : ''}>✅ Quotes Of The Day ✅</h2>
-            <p>"Jadilah seperti loop tanpa akhir: terus berputar tanpa pernah berakhir!"</p>
+            <button onClick={fetchJoke} className="mt-5 bg-blue-600 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded">
+              Dapatkan Quotes Baru
+            </button>
+            {loading && <div className='mt-2'>Loading...</div>}
+            {error && <div>Error : {error}</div>}
+            {joke && <p>{joke}</p>}
           </div>
+
           <br /><br />
           <h2 className={inView ? 'animated fadeIn' : ''}>👫 Meet Our Team 👫</h2>
           <br />
