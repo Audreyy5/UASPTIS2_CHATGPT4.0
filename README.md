@@ -65,6 +65,7 @@ Kami juga menyediakan "Food Memory Game" yang menarik untuk menguji ingatan peng
 4. **OpenWeather API**: digunakan untuk dua fitur
 - Untuk menyediakan pembaruan cuaca real-time di lokasi yang ditampilkan.
 - Fitur kedua, saat cuaca sedang hujan, maka tampilan web akan berbeda.
+5. **Jokes API**: untuk memberi jokes/quotes terupdate pada website kami, menambah kesan fun di web kami. 
 
 ## Layar Media Optimal 
 -  430 x 932 px - iphone 14 max
