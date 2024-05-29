@@ -68,11 +68,13 @@ Kami juga menyediakan "Food Memory Game" yang menarik untuk menguji ingatan peng
 5. **Jokes API**: untuk memberi jokes/quotes terupdate pada website kami, menambah kesan fun di web kami. 
 
 ## Layar Media Optimal 
+Bagian homepage :
 -  430 x 932 px - iphone 14 max
 -  412 x 914 px 
 -  375 x 667 px
 - 1920 x 1080 px
 - 2560 × 1600 px
+Keseluruhan bagian lainnya : optimal untuk semua perangkat.
 
 ## React + Vite
 
