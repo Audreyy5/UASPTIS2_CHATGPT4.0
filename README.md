@@ -86,7 +86,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ## Link Video Presentasi, Hosting dan Github
-- Video Presentasi : https://drive.google.com/file/d/1ruXj9HgB_UjvSnfTuzNDaSgLMJ4o0Lg0/view?usp=share_link 
+- Video Presentasi : https://drive.google.com/file/d/104WUhLYxrQmbSAQthh8eE1zLA1bHBegQ/view?usp=sharing 
 - Github Respository : https://github.com/Audreyy5/UASPTIS2_CHATGPT4.0.git 
 - Hosting : beautyofbali.vercel.app 
 ---
